@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="template.css">
+    <title>NUMBER CONVERTOR</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <label for="input">Number</label>
+        <input type="number" id="input" /><br>
+        <label for="selectMenuFrom">From</label>
+        <select id="selectMenuFrom">
+            <option selected value="decimal">Decimal</option>
+        </select>
+        <label for="selectMenuTo">To</label>
+        <select id="selectMenuTo">
+            <option selected value="Binar">Binar</option>
+            <option selected value="Hexadecimal">Hexadecimal</option>
+        </select>
+        <button><object id = "button">Convert it</object></button>
+
+    </div>
+    <footer>
+        <label for="result">Result</label>
+        <input type="text" name="output" id="result" disabled readonly />
+    </footer>
+
+    <script src="scriptconvorter.js">
+        document.getElementById('button').onclick = function() {
+
+            document.getElementById('result').innerHTML = ConvertBase;
+        };
+    </script>
+
+</body>
+</html>
